@@ -35,6 +35,9 @@ jobs:
       - name: Test
         run: yarn mocha
 
+      - name: Fail
+        run: exit 1
+
         env:
           CI: false
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }} # https://github.com/AkhileshNS/heroku-deploy/issues/35#issuecomment-922254638
