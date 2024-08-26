@@ -30,7 +30,8 @@
     "nodemon": "^2.0.14",
     "prettier": "^2.4.1",
     "ws": "7.5.10",
-    "follow-redirects": "1.14.3"
+    "follow-redirects": "1.14.3",
+    "@grpc/grpc-js": "1.10.0"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
