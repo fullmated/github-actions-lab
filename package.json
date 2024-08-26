@@ -30,7 +30,7 @@
     "nodemon": "^2.0.14",
     "prettier": "^2.4.1",
     "ws": "7.5.10",
-    "follow-redirects": "1.14.3",
+    "follow-redirects": "1.15.6",
     "@grpc/grpc-js": "1.10.9",
     "typeorm": "0.2.0",
     "axios": "1.7.4"
