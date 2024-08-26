@@ -1,0 +1,37 @@
+{
+  "name": "express-boilerplate-ci-cd",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "start:dev": "nodemon app.js",
+    "start:docker-dev": "docker build -t express-boilerplate-docker-dev -f  Dockerfile.dev . && docker run -p 3001:80 express-boilerplate-docker",
+    "start:docker-prod": "docker build -t express-boilerplate-docker-prod -f . && docker run -p 3001:80 express-boilerplate-docker",
+    "test": "yarn lint && yarn mocha",
+    "lint": "eslint . --config .eslintrc.js",
+    "mocha": "mocha tests/*.js",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": ">=10",
+    "mocha": "^9.1.3",
+    "nodemon": "^2.0.14",
+    "prettier": "^2.4.1"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
+}
