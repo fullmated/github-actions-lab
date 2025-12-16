@@ -33,7 +33,7 @@
     "follow-redirects": "1.15.6",
     "@grpc/grpc-js": "1.10.9",
     "typeorm": "0.2.34",
-    "axios": "1.7.4"
+    "axios": "1.13.2"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
