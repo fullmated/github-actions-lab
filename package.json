@@ -15,8 +15,8 @@
   "dependencies": {
     "cookie-parser": "~1.4.6",
     "debug": "~2.6.9",
-    "ejs": "~2.6.1",
-    "express": "~4.16.1",
+    "ejs": "~3.1.10",
+    "express": "~4.22.0",
     "http-errors": "~2.0.0",
     "morgan": "~1.10.1"
   },
@@ -32,7 +32,7 @@
     "ws": "7.5.10",
     "follow-redirects": "1.15.6",
     "@grpc/grpc-js": "1.10.9",
-    "typeorm": "0.2.34",
+    "typeorm": "0.3.26",
     "axios": "1.7.4"
   },
   "lint-staged": {
